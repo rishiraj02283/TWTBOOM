@@ -28,6 +28,7 @@
 
  - git clone https://github.com/Oseid/TWTBOOM.git
  - cd TWTBOOM/
+ - pip install requests
  - pip install mechanize
 ***
 
