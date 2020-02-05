@@ -123,7 +123,7 @@ def TBOM(username,wordlist=False,passwd=False,proxy=False):
 ==================================
 [---]        """+wi+"""TwtBoom"""+gr+"""         [---]
 ==================================
-[---]  """+wi+"""BruteForce Twitter  """+gr+""" [---]
+[---]  """+wi+"""BruteForce Twitter  """+gr+"""  [---]
 ==================================
 [---]         """+yl+"""CONFIG"""+gr+"""         [---]
 ==================================
@@ -173,7 +173,7 @@ def TBOM(username,wordlist=False,passwd=False,proxy=False):
 			time.sleep(0.60)
 		if not issuccess:
 			print(yl+"\n["+rd+"!"+yl+"] Sorry: "+wi+"The Password[ "+yl+passwd+wi+" ] Is Not Correct"+rd+":("+yl+"!"+wi)
-			print(gr+"["+yl+"!"+gr+"]"+yl+" Please Try Other password or Wordlist File "+gr+":)"+wi)          
+			print(gr+"["+yl+"*"+gr+"]"+yl+" Please Try Other password or Wordlist File "+gr+":)"+wi)          
 		exit(1)
 	with open(wordlist) as wfile:
 		for passwd in wfile:
