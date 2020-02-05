@@ -171,10 +171,9 @@ def TBOM(username,wordlist=False,passwd=False,proxy=False):
 			issuccess = 2
 			print(rd+"\n["+yl+"!"+rd+"] Error: "+yl+str(e)+wi)
 			time.sleep(0.60)
-		if issuccess==0:
+		if not issuccess:
 			print(yl+"\n["+rd+"!"+yl+"] Sorry: "+wi+"The Password[ "+yl+passwd+wi+" ] Is Not Correct"+rd+":("+yl+"!"+wi)
 			print(gr+"["+yl+"!"+gr+"]"+yl+" Please Try Other password or Wordlist File "+gr+":)"+wi)          
-			exit(1)
 		exit(1)
 	with open(wordlist) as wfile:
 		for passwd in wfile:
@@ -204,11 +203,12 @@ def TBOM(username,wordlist=False,passwd=False,proxy=False):
 			except (KeyboardInterrupt,EOFError):
 				print(rd+"\n["+yl+"!"+rd+"]"+yl+" Aborting"+rd+"..."+wi)
 				time.sleep(1.5)
-				exit(1)
+				issuccess = 2
+				break
 			except Exception as e:
 				print(rd+"["+yl+"!"+rd+"] Error: "+yl+str(e)+wi)
 				time.sleep(0.60)
-	if issuccess ==0:
+	if not issuccess:
 			print(yl+"\n["+rd+"!"+yl+"] Sorry: "+wi+"I Can't Find The Correct Password In [ "+yl+wordlist+wi+" ] "+rd+":("+yl+"!"+wi)
 			print(gr+"["+yl+"*"+gr+"]"+yl+" Please Try Other Wordlist File "+gr+":)"+wi)
 	exit(1)
