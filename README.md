@@ -43,6 +43,6 @@
 ***
 
 # That's All :)
-   * This Script By Oseid Aldary
+   * This Script By deep
    * Thanks For Usage
    * Have A Nice Day...GoodBye :)
