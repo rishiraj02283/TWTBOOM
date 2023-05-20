@@ -67,7 +67,7 @@ def find_form(forms):
 		    fid = forms.index(f)
 		    break
 	if not found:return "block"
-	else: return fid
+	else: return
 ### TWITTER BRUTE FROCE FUNCTION ###
 def TBOM(username,wordlist=False,passwd=False,proxy=False):
 	if wordlist and not os.path.isfile(wordlist):
@@ -281,6 +281,6 @@ if __name__=='__main__':
 #####################   END OF TOOL  #########################
 #####################                #########################
 ##############################################################
-#This Tool by Oseid Aldary
+#This Tool by deep
 #Have a nice day :)
 #GoodBye
