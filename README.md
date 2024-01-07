@@ -18,16 +18,13 @@
    
    - **Brute Force On twitter Account With Proxy(HTTP/s)**:
    
-    * **Command**: python twtboom.py -t Oseid@gmail.com -w wlist.txt -p 35.236.37.121
+    * **Command**: python twtboom.py -t -w wlist.txt -p 35.236.37.121
     
     ![withProxy](https://user-images.githubusercontent.com/29546157/73847921-dad0c800-482f-11ea-8f67-8452d19f7f48.PNG)
     
 ***
 
-# For Install:
-
- - git clone https://github.com/Oseid/TWTBOOM.git
- - cd TWTBOOM/
+# For Install
  - pip install requests
  - pip install mechanize
 ***
